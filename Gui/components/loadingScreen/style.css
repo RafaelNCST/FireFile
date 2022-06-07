@@ -1,0 +1,43 @@
+body, html{
+    height: 100%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "interExtraBold";
+    src: url("../../fonts/inter/static/Inter-ExtraBold.ttf");
+}
+
+.Logo{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #22252c;
+    overflow: hidden;
+    flex-direction: column;
+    border: 1px solid #FF8B03;
+}
+
+.Logo span{
+    margin-top: 5px;
+    width: fit-content;
+    font-family: "interExtraBold";
+    font-size: 30px;
+    color: #FF8B03;
+    text-shadow:#000 1px -1px, #000 -1px 1px, #000 1px 1px, #000 -1px -1px;
+}
+
+.Logo div{
+    background-color: #22252c;
+}   
+
+.Logo div img{
+    width: 150px;
+}   

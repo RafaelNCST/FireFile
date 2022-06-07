@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../functions.css">
+    <link rel="stylesheet" href="./style.css"> 
+</head>
+<body>
+    <div class="title-bar">
+        <div class="logotipo">
+            <img src="../../imagens/FireFile.png" alt=""/>
+            <span> FireFile </span>
+        </div>
+        <div class="title-bar-btns">
+            <button class="btn" id="minimize-btn">&minus;</button>
+            <button class="btn" id="close-btn">&#10006;</button>
+        </div>
+    </div>
+    <div class="body-initial-div">
+        <label class="labelFile" for="inputFileHtml"> 
+            <img src="../../imagens/newFile.png" /> 
+        </label>
+        <span class="textChooseArchive"> Selecione uma pasta para começar </span>
+        <input type="file" id="inputFileHtml"  multiple webkitdirectory />
+    </div>
+    <div class="modalWarning" id="modalWarning">
+        <div class="modalHeader">Aviso</div>
+        <div class="modalBody"> </div>
+        <div class="modalFooter"><button id="buttonOk">Ok</button></div>
+    </div>
+    <div class="body-div">
+        <div class="div-box-archive">
+            <input id="nome" disabled="true" value="Name: "/>
+            <div class="textsUnderInput">
+                <span class="text-choose"> Escolha uma pasta e o tipo de conversão: </span>
+                <span id="tamanho"></span>
+            </div>
+            <div class="input-And-MiniFile">
+                <input type="text" id="input-archive"/>
+                <label class="labelMinifile" for="miniInputFile"> 
+                    <img src="../../imagens/newMiniFile.png" /> 
+                </label>
+                <input type="file" id="miniInputFile" multiple webkitdirectory />
+            </div>
+            <div class="infos-action"> 
+                <div class="Divsucess">
+                    <div class="sucess"></div>
+                </div>
+                <div class="inputsAndButtons">
+                    <button id="buttonConvert" class="converter-Button">Converter</button>
+                    <select class="extInputs" id="extensions"> 
+                        <option value="ConvertAll">Converter Tudo </option>
+                        <option value="onlyPdf"> Somente pdf </option>
+                        <option value="onlyDocx"> Somente docx </option>
+                    </select>
+                </div>
+                <div class="sucessImg" id="arrowSpin"><img id="imgSucessTag" src="../../imagens/checkSucess.png" /></div>
+            </div>
+        </div>
+        <div class="tipMessage"> *Note que a saída padrão é na pasta original onde o arquivo está! </div>
+    </div>
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+</html>

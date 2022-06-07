@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../functions.css">
+    <link rel="stylesheet" href="./style.css"> 
+</head>
+<body>
+    <div class="title-bar">
+        <div class="logotipo">
+            <img src="../../imagens/FireFile.png" alt=""/>
+            <span> FireFile </span>
+        </div>
+        <div class="title-bar-btns">
+            <button class="btn" id="minimize-btn">&minus;</button>
+            <button class="btn" id="close-btn">&#10006;</button>
+        </div>
+    </div>
+    <div class="modalWarning" id="modalWarning">
+        <div class="modalHeader">Aviso</div>
+        <div class="modalBody"> Erro na edição, verifique sua entrada </div>
+        <div class="modalFooter"><button id="buttonOk">Ok</button></div>
+    </div>
+    <div class="modalWarning" id="modalWarning">
+        <div class="modalHeader">Aviso</div>
+        <div class="modalBody"> </div>
+        <div class="modalFooter"><button id="buttonOk">Ok</button></div>
+    </div>
+    <div class="body-div">
+        <div class="subBody-container">
+            <div class="inputsFiles">
+                <div class="input1">
+                    <span class="textInput1">Arquivo 1:</span>
+                    <input disabled placeholder="Escolha o PDF 1" class="inputFile" id="inputFile1"/>
+                    <label class="labelMinifile" for="miniInputFile1"> 
+                        <img src="../../imagens/newMiniFile.png" /> 
+                    </label>
+                    <input type="file" id="miniInputFile1" required accept="application/pdf" />
+                </div>
+                <span id="size1">Size:</span>
+                <div class="input2">
+                    <span class="textInput2">Arquivo 2:</span>
+                    <input disabled placeholder="Escolha o PDF 2" class="inputFile" id="inputFile2"/>
+                    <label id="labelInputFile" class="labelMinifile" for="miniInputFile2"> 
+                        <img src="../../imagens/newMiniFile.png" /> 
+                    </label>
+                    <input type="file" id="miniInputFile2" required accept="application/pdf" />
+                </div>
+                <span id="size2">Size: 0 KB</span>
+            </div>
+            <div class="optionsChoose">
+                <div class="chooseOtion-Edit">
+                    <span>Escolha uma opção de edição:</span>
+                    <select id="select">
+                        <option class="options" value="none" disabled hidden selected> Escolha uma opção </option>
+                        <option class="options" value="append"> Juntar Dois PDFs </option>
+                        <option class="options" value="remove"> remover uma página de um PDF </option>
+                        <option class="options" value="mergeNew"> Fundir páginas de um PDF em um novo </option>
+                        <option class="options" value="cut"> Cortar PDF em dois </option>
+                    </select>
+                </div>
+                <div class="pagesChoose">
+                    <div class="displayOptions">
+                        <span>Página a ser removida: </span>
+                        <input id="inputSingle" type="number"/>
+                    </div>
+                    <div class="displayOptions">
+                        <span>Página inicial: </span>
+                        <input class="inputsPages" min="0" id="inputI" type="number"/>
+                        <span>Página Final: </span>
+                        <input class="inputsPages" min="0" id="inputF" type="number"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="listraFinal"></div>
+        <div class="buts">
+            <div class="Divsucess">
+            <div class="sucess"></div>
+        </div>
+        <div class="sucessImg" id="arrowSpin"><img src="../../imagens/checkSucess.png" /></div>
+        <button class="EditButton"> Editar </button>
+        </div>
+    </div>
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+</html>

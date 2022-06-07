@@ -1,0 +1,19 @@
+{
+  "name": "firefile",
+  "version": "1.0.0",
+  "description": "Um APP que gerencia e trata arquivos digitais",
+  "main": "./electron/main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-packager . FireFile --ignore=node_modules/electron-* --prune=true --out=build --icon=./assets/icon.ico"
+  },
+  "author": "Rafael Colares",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^18.0.3",
+    "electron-packager": "^15.5.1"
+  },
+  "dependencies": {
+    "python-shell": "^3.0.1"
+  }
+}

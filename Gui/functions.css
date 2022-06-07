@@ -1,0 +1,138 @@
+:root{
+    --backGround-Color: #22252c;
+}
+
+.title-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+    align-items: center;
+    background-color: none;
+    border-bottom: 1px solid #cc6600;
+    -webkit-app-region: drag;
+}
+
+@font-face {
+    font-family: "interExtraBold";
+    src: url("./fonts/inter/static/Inter-ExtraBold.ttf");
+}
+
+.logotipo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+}
+
+.logotipo img{
+    width: 25px;
+    margin-bottom: 3px;
+    user-select: none;
+    pointer-events: none;
+}
+
+.logotipo span{
+    margin-top: 5px;
+    width: fit-content;
+    font-family: "interExtraBold";
+    font-size: 18px;
+    color: #FF8B03;
+    text-shadow:#000 1px -1px, #000 -1px 1px, #000 1px 1px, #000 -1px -1px;
+}
+
+.title-bar-btns {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    -webkit-app-region: no-drag;
+    user-select: none;
+}
+.btn{
+    background-color: var(--backGround-Color);;
+    border: none;
+    width: 40px;
+    height: 100%;
+    font-size: medium;
+    color: white;
+    transition: 0.5s;
+    outline: none;
+}
+
+#minimize-btn:hover{
+    background-color: #3b3b3b;
+}
+
+#close-btn:hover{
+    background-color: #FF0000;
+}
+
+.body-initial-div{
+    position: absolute;
+    background-color: var(--backGround-Color);;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+
+.body-initial-div-blocked{
+    display: none;
+}
+
+#inputFileHtml{
+    display: none;
+}
+
+.labelFile{
+    width: 100px;
+    height: 100px;
+    background-color: #FF8B03;
+    box-shadow: 0px 0px 5px 1px black;
+    color: #FFF;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    transition: all ease-in 0.3s;
+    margin-bottom: 10px;
+}
+
+.labelFile:hover{
+    background-color: #6b4315;
+}
+
+.labelFile img{
+    width: 50px;
+}
+
+#miniInputFile{
+    display: none;
+}
+
+.labelMinifile {
+    width: 30px;
+    height: 30px;
+    background-color: #FF8B03;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    transition: all ease-in 0.3s;
+}
+
+.labelMinifile:hover{
+    background-color: #6b4315;
+}
+
+.labelMinifile img{
+    width: 25px;
+}

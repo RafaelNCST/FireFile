@@ -1,0 +1,5 @@
+docx2pdf
+pdf2docx
+pyMuPDF
+pillow
+pyPDF3

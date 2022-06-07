@@ -1,0 +1,142 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    user-select: none;
+}
+
+@font-face {
+    font-family: "interExtraBold";
+    src: url("../../fonts/inter/static/Inter-ExtraBold.ttf");
+}
+
+.roundedBar{
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: #22252c;
+    border: 1px solid #FF8B03;
+    width: 400px;
+    height: 45px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logoTipo{
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+}
+
+.logoTipo img{
+    width: 25px;
+    pointer-events: none;
+}
+
+.spanLogoTipo{
+    margin-top: 5px;
+    width: fit-content;
+    font-family: "interExtraBold";
+    font-size: 18px;
+    color: #FF8B03;
+    text-shadow:#000 1px -1px, #000 -1px 1px, #000 1px 1px, #000 -1px -1px;
+}
+
+.gridItens{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.frameImagesItens{
+    background-color: #FF8B03;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+}
+
+.floatMessage{
+    position: absolute;
+    color: black;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10px;
+    padding: 5px;
+    width: fit-content;
+    opacity: 0;
+    pointer-events: none;
+    user-select: none;
+}
+
+.convertMessage{
+    left: 160px;
+}
+
+.otimizarMessage{
+    left: 210px;
+}
+
+.organizarMessage{
+    left: 270px;
+}
+
+.editarMessage{
+    left: 320px;
+}
+
+.frameImagesItens:hover{
+    background-color: #6b4315;
+}
+
+.frameImagesItens:hover .floatMessage{
+    opacity: 1;
+}
+
+.gridItens img{
+    width: 25px;
+}
+
+.quitApp{
+    background-color: #22252c;
+    border: none;
+    width: 20px;
+    font-size: medium;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 5px;
+    transition: 0.5s;
+    outline: none;
+    border-bottom-right-radius: 20px;
+    margin-bottom: 5px;
+}
+
+.quitApp-Div{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom-right-radius: 20px;
+}
+
+.quitApp:hover{
+    background-color: #FF0000;
+}
+
+
+
+
+
+
+
